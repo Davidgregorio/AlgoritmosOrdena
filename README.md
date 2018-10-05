@@ -3,6 +3,7 @@ Algoritmos de ordenação (Insertion, Selection, Buble, Shell, Merge, Quick, Hea
 
 ALGORITMOS  **************************************************************************************************************
 Algoritmos.h
+
                             /*
     INSERTION SORT          ***********************
                             */
@@ -118,7 +119,7 @@ void mergeH( int vet[], int inicio, int fim){
     Intercala(inicio, fim, vet, meio);
 }
 
-                        /*
+                    	    /*
     QUICK SORT              ***********************
                             */
 
