@@ -6,9 +6,9 @@ Algoritmos.h
                             /*
     INSERTION SORT          ***********************
                             */
+			    
 void insertion (int vet[], int tam){
     int i = 0, j, aux;
-
     for ( j = 1; j < tam ; j++){
 		aux = vet[j];
 		i = j - 1;
@@ -22,11 +22,10 @@ void insertion (int vet[], int tam){
                             /*
     SELECTION SORT          ***********************
                             */
+			    
 void selection(int vet[], int tam){
-
     for (int i = 0; i < tam; ++i) {
         int Vminimo = i;
-
         for (int j = i+1; j < tam; ++j) {
             if (vet[j] < vet[Vminimo]) {
             Vminimo = j;}
@@ -39,6 +38,7 @@ void selection(int vet[], int tam){
                             /*
     BUBLE SORT              ***********************
                             */
+			    
 void buble(int vet[], int tam){
     int aux, i, j;
     for (i = 0; i < (tam - 1); i++) {
