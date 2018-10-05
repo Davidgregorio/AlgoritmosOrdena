@@ -35,6 +35,7 @@ void selection(int vet[], int tam){
         vet[Vminimo] = aux;
     }
 }
+
                             /*
     BUBLE SORT              ***********************
                             */
@@ -144,6 +145,7 @@ void quick(int vet[],int p, int r){
                             /*
     HEAP SORT               ***********************
                             */
+			    
 void min_heapify(int vet[], int tam, int i){
     int menor;
     int esq = 2*i + 1;
