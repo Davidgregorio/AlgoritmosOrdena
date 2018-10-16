@@ -1,5 +1,5 @@
                             /*
-    ALGORITMOS QUE FAZEM A ORDENA«√O ***********************
+    ALGORITMOS QUE FAZEM A ORDENA√á√ÉO **************
                             */
 
 
@@ -141,6 +141,7 @@ void quick(int vet[],int p, int r){
      	quick (vet, meio + 1, r);
     }
 }
+
                             /*
     HEAP SORT               ***********************
                             */
