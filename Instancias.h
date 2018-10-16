@@ -14,7 +14,7 @@
 
 using namespace std;
 
-int geraNum(int vet[], int opcao[]){ // gera o vetor de numeros
+int geraNum(int vet[], int opcao[]){ // gera o vetor de n√∫meros
     int j;
 	switch (opcao[2]){
 		int i;
@@ -55,10 +55,10 @@ void arquivoEntrada (int opcao[], int vet[]){ // Gera arquivos entrada
 	int j, i = 0;
 
 	strcat(caminho, "Arquivos\\");
-	sprintf(conversao, "%i", opcao[4]); // salva em convers„o o que vai ser nome do arquivo, neste caso, o que o usu·rio digitou, e que esta salvo no ponteiro menu
+	sprintf(conversao, "%i", opcao[4]); // salva em convers√£o o que vai ser nome do arquivo, neste caso, o que o usu√°rio digitou, e que esta salvo no ponteiro menu
 	strcat(conversao,".txt"); // concatena com .txt
 
-	switch(opcao[2]){ // concatena com as 3 opÁıes de ordenaÁ„o crescente, decresc....
+	switch(opcao[2]){ // concatena com as 3 op√ß√µes de ordena√ß√£o crescente, decresc....
 		case 1:	strcat(caminho, "Crescentes\\");
 			strcat(caminho,conversao);
 			f = fopen(caminho, "w");
@@ -85,11 +85,11 @@ void arquivoEntrada (int opcao[], int vet[]){ // Gera arquivos entrada
 void gerarInstancias(){
     int *opcao, *vet;
     opcao = (int *)malloc (4 *sizeof(int) );
-    for (int i= 1; i<4; i++){                                                       // Gerencia ordenaÁ„o
+    for (int i= 1; i<4; i++){                                                       // Gerencia ordena√ß√£o
         opcao[2] = i;
         opcao[4] = 1;                                                             // a partir de que tamanho gerar intancias
-            for(int j=1; j<9; j++){              // Gera instancias de atÈ atÈ 10^8
-                opcao[4]  = opcao[4]*10;         // As instancias s„o multiplas de 10
+            for(int j=1; j<9; j++){              // Gera instancias de at√© at√© 10^8
+                opcao[4]  = opcao[4]*10;         // As instancias s√£o multiplas de 10
                 vet = (int *)malloc (opcao[4] * sizeof(int));
                 criaPastas(opcao);                                                   // cria pastas
                 *vet = geraNum(vet, opcao);                                          // gera os numeros e insere no vetor
